@@ -43,11 +43,11 @@ export default class Users{
 		return this.data;
 	}
 	getNames(){
-		return this.data.map(user => 
+		return this.data.map(user =>
 			Objct.assign({}, {
-				name: `${user.first}${user.middle ? user.middle+' ': ''}${user.last}
+				name: `${user.first}${user.middle ? user.middle+' ': ''}${user.last}`
 			})
-		);
+		)
 	}
 	getOldest(){
 		return Math.max.apply(null, this.data.map(user => user.age));
@@ -62,7 +62,7 @@ export default class Users{
 		return userData.filter(user => user.occupation === occ);
 	}
 	filterByGender(gender){
-		return this.data.filter(user => 
+		return this.data.filter(user =>
 			/^m/i.test(gender) ? user.gender === 'M' :
 			/^f/i.test(gender) ? user.gender === 'F' :
 			user.gender.includes('M', 'F')
