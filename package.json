@@ -1,7 +1,7 @@
 {
   "name": "es6-ex",
   "version": "1.0.0",
-  "description": "",
+  "description": "Testing ES6 with Express"
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,5 +21,12 @@
     "express": "^4.16.2",
     "express-bunyan-logger": "^1.3.2",
     "faker": "^4.1.0"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "repository": { 
+	  "type" : "git",
+	  "url" : "https://github.com/daGoloubev/es6-ex.git"
+	}
 }
